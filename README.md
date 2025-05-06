@@ -10,7 +10,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - Criar páginas web em HTML5 e CSS3 com os principais recursos;
 - Criar páginas web em HTML5 e CSS3 com estrutura e layout.
 
-----
+-----
 
 ## 📚 Trilha de Aprendizagem
 
