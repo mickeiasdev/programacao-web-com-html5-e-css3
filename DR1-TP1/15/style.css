@@ -1,0 +1,13 @@
+h1 {
+  text-decoration: underline;
+}
+
+.box {
+  width: 300px;
+  border: 1px solid black;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1.3px;
+  color: blueviolet;
+}

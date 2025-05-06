@@ -1,0 +1,20 @@
+h1 {
+  text-decoration: underline;
+}
+
+.card {
+  border: 3px solid blue;
+  border-radius: 8px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+/*
+    Alterei o text-align e o height,
+    para deixar melhor estilizado
+*/
