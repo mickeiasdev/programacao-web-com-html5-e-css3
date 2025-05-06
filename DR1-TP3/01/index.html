@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #151515;
+      }
+
+      main {
+        height: 100%;
+        margin: 20px 0;
+        color: white;
+      }
+
+      video {
+        height: 210px;
+        width: 320;
+        margin: 25px;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+      }
+
+      p {
+        colo: white;
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+  <!-- Crie um arquivo HTML com CSS incorporado,
+      e nele gere um player de vídeo para três filmes quaisquer em MP4,
+      e formate com CSS o design do seu player. -->
+
+  <body>
+    <main>
+      <p>Video 01</p>
+      <video autoplay controls>
+        <source src="video1.mp4" type="video/mp4" />
+      </video>
+      <p>Video 02</p>
+      <video autoplay controls>
+        <source src="video1.mp4" type="video/mp4" />
+      </video>
+      <p>Video 03</p>
+      <video autoplay controls>
+        <source src="video1.mp4" type="video/mp4" />
+      </video>
+    </main>
+  </body>
+</html>

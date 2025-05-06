@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+iframe {
+  border: 5px solid rgba(255, 255, 255, 0.281);
+  border-radius: 25px;
+  width: 800px;
+  height: 600px;
+}

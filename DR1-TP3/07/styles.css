@@ -1,0 +1,17 @@
+* {
+  font-size: 13px;
+}
+
+body {
+  background-color: #252525;
+  color: rgb(233, 245, 255);
+  padding: 10px 50px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  0.8em
+}

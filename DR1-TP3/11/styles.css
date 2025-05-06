@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0f4571;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  & .headerR {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    & i {
+      font-size: 25px;
+    }
+  }
+  & .headerL ul {
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    font-size: 18px;
+    & li {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+    }
+    & li:hover {
+      background: linear-gradient(
+        45deg,
+        rgb(15, 81, 135) 0%,
+        rgb(11, 69, 114) 100%
+      );
+    }
+    & a,
+    a:visited {
+      color: white;
+      font-weight: 500;
+    }
+    & a i {
+      padding-right: 10px;
+    }
+  }
+}
+
+.sec1 {
+  height: 600px;
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(8, 8, 8) 100%);
+}
+
+.sec2 {
+  height: 600px;
+  background: linear-gradient(270deg, rgb(40, 40, 40) 0%, rgb(8, 8, 8) 100%);
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #104774;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
