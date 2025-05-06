@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--backgroundColorEscuro);
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.textoFooter {
+  width: 20%;
+  position: absolute; /*  So coloquei porque pedia nos enunciados '-'  */
+  left: 40%;
+}

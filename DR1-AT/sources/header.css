@@ -1,0 +1,32 @@
+/* -------------------------------- caixa cabecalho -------------------- */
+.cabecalho {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--backgroundColorEscuro);
+}
+/* -------------------------------- imagem cabecalho -------------------- */
+.cabecalho img {
+  width: 3.5em; /* corrigir largura da img do nav */
+  height: var(--alturaNav);
+  padding-top: 0.5em; /* corrigir posicao da img do nav */
+}
+/* -------------------------------- lista .cabecalho -------------------- */
+.listaNav {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  text-transform: uppercase;
+}
+.itemNav {
+  height: var(--alturaNav);
+  display: flex;
+  align-items: center;
+  padding: var(--espacamentoBotaoMedio);
+  transition: var(--transicaoHover);
+}
+.itemNav:hover {
+  background-color: var(--backgroundColorSuporteEscuro);
+}
