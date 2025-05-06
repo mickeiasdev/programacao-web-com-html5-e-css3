@@ -1,0 +1,26 @@
+/*
+  Elabore uma página HTML que utilize dois arquivos CSS externos: um voltado para a formatação de texto e outro para o design.
+  Adicione um título principal e distribua três blocos de texto por toda a largura da página, separados por linhas simples e acompanhados de subtítulos.
+  Defina uma margem de 10px e, ao longo do projeto, assegure-se de aplicar as seguintes propriedades CSS: margin, padding, color, font-family, text-align, font-size e font-weight.
+*/
+
+/*
+  Design
+*/
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.caixa {
+  background-color: rgb(40, 40, 40);
+  padding: 10px;
+  margin: 10px 0;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+  border-radius: 16px;
+}

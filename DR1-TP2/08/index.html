@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+  </head>
+  <!--
+    Construa uma página HTML com [CSS incorporado] e [conteúdo autêntico de sua preferência],
+    [centralizado e em conformidade com as boas práticas semânticas].
+    Adicione [um título principal no topo]
+    e uma [única seção para o corpo do conteúdo].
+    Dentro dessa seção, [organize três blocos respeitando a hierarquia de cabeçalhos:]
+    o [primeiro nível deve conter um parágrafo relacionado ao seu título,]
+    enquanto o [segundo nível deve incluir dois parágrafos].
+    No [rodapé da página, insira uma citação indicando a fonte do conteúdo] 
+    utilizado para compor a página.
+
+Observações:
+
+Fonte Verdana cor black tamanho 12px.
+Títulos e subtítulos Fonte Tahoma cor cinza escuro.
+Parágrafos com recuo da primeira linha com 25px e alinhamento de texto justificado.
+Margem de 20px na página, margem de 10px nos blocos de texto.
+Não esqueça da “Div centralizante”. 
+Use Class na centralizante.
+Use:
+
+header;
+main;
+h1, h2, h3;
+section;
+article;
+p;
+cite;
+footer;
+padding.
+  -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .centralizante {
+      height: calc(100vh - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Verdana, sans-serif;
+      color: black;
+      font-size: 12px;
+      margin: 20px;
+      text-align: center;
+      & p {
+        padding: 10px;
+      }
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: Tahoma, sans-serif;
+      color: darkgrey;
+      padding: 10px;
+    }
+    article p {
+      text-indent: 25px;
+      text-align: justify;
+    }
+    footer {
+      bottom: 0;
+      color: black;
+      text-align: center;
+    }
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="centralizante">
+      <main>
+        <header>
+          <h1>A complexidade de "Tokyo Ghoul" e seus temas profundos</h1>
+        </header>
+        <article class="bloco1">
+          <h2>A luta interna de Kaneki: entre Humanidade e Monstro</h2>
+          <p>
+            Em "Tokyo Ghoul", a jornada do protagonista Ken Kaneki é marcada por
+            um profundo conflito interno. Após um acidente que o transforma em
+            meio-ghoul, ele se vê dividido entre dois mundos: o dos humanos e o
+            dos ghouls. Esse conflito torna-se um dos principais motores da
+            trama, explorando a luta pela identidade, a sobrevivência e a
+            aceitação. A transformação de Kaneki não é apenas física, mas também
+            psicológica, à medida que ele precisa se adaptar a uma nova
+            realidade em que suas antigas certezas sobre o que é certo e errado
+            são desafiadas.
+          </p>
+        </article>
+        <article class="bloco2">
+          <h2>A sociedade dividida entre humanos e ghouls</h2>
+          <p>
+            "Tokyo Ghoul" apresenta uma sociedade distópica onde ghouls – seres
+            que se alimentam de carne humana – vivem em segredo, enquanto os
+            humanos lutam para sobreviver a essa ameaça. A maneira como a série
+            retrata essa divisão reflete temas como preconceito, segregação e o
+            medo do desconhecido. A guerra entre as duas espécies não é apenas
+            uma luta física, mas também uma guerra ideológica, onde cada lado
+            busca justificar suas ações como sendo para a "sobrevivência". Esse
+            cenário levanta questões sobre moralidade, ética e os limites do que
+            somos capazes de fazer quando confrontados com a necessidade de
+            viver.
+          </p>
+          <h3>Os dilemas filosóficos e psicológicos de Kaneki</h3>
+          <p>
+            Ao longo da história, Kaneki enfrenta dilemas filosóficos profundos.
+            Ele é forçado a questionar sua própria natureza e o que significa
+            ser "humano". Em sua jornada, Kaneki se vê envolvido com figuras
+            como Touka, Rize e outros personagens que desempenham papéis
+            importantes em sua transformação. A psicologia de Kaneki é complexa,
+            com seus momentos de fragilidade, coragem e uma sede por vingança
+            que o consome. A narrativa de "Tokyo Ghoul" explora como traumas
+            podem moldar a identidade e os limites da humanidade.
+          </p>
+        </article>
+      </main>
+      <footer>
+        <p>
+          Fonte: Criado com base no conteúdo de
+          <cite>"Tokyo Ghoul" (mangá/anime)</cite> e interpretação pessoal.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

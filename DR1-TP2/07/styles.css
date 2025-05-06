@@ -1,0 +1,32 @@
+/* 
+    Crie um arquivo HTML, usando CSS externo, e nele crie um retângulo de 500px x 200px,
+    com sombra a seu gosto, cantos arredondados, e cor de fundo contrastando com a cor do
+    texto de uma lista de 5 itens quaisquer, com fonte externa puxada do google fonts.
+    Separe as regras usando ID´s e classes, usando uma para formatação e posicionamento
+    e outro para layout.
+*/
+
+body {
+  background-color: black;
+}
+
+.retangulo {
+  margin: 25px;
+  width: 500px;
+  height: 200px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 2px 5px 0;
+  border-radius: 10px;
+}
+
+#lista {
+  font-size: large;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: orange;
+  font-family: Poppins, sans-serif;
+}

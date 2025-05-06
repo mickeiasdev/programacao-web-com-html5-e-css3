@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+figure {
+  margin: 25px;
+  width: 1200px;
+  position: relative;
+  box-shadow: rgb(50, 50, 50) 5px 5px 5px 0;
+  border-radius: 20px;
+}
+
+img {
+  width: 1200px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+figcaption {
+  background-color: rgb(9, 22, 48);
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+}

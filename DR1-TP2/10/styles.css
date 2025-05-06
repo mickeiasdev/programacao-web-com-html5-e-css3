@@ -1,0 +1,32 @@
+body {
+  background-color: slategray;
+  font-family: Verdana, sans-serif;
+}
+header {
+  background: linear-gradient(90deg, #0c0636 0%, #095169 80%);
+  width: 1000px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-weight: bolder;
+  border-bottom: solid 1px black;
+  & a {
+    padding: 5px 20px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  & a:visited {
+    color: aliceblue;
+  }
+  & a:hover {
+    background: linear-gradient(90deg, #059b9b48 0%, #53ba8344 80%);
+    border-radius: 5px;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  list-style: none;
+}

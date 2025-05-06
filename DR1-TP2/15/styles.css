@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.phineas,
+.kick,
+.ben,
+.hora,
+.padrinhos {
+  width: 851px;
+  height: 315px;
+  margin: 20px;
+  position: relative;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  & img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    box-shadow: 0 5px 5px 0;
+  }
+}
+
+.phineas {
+  background-image: url("https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/7U4XPME4ANGQZLNWNAXVPZUMN4.jpeg?auth=3df819bab030a5c5250aa759f5a04c1f8382765a667591afce11c7b98b74d64b&width=770&height=433");
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+.phineas:hover {
+  background-image: url("https://uploads.spiritfanfiction.com/historias/capas/202301/nao-tem-ninguem-aqui-24550817-070120231528.png");
+  background-size: cover;
+}
+
+.kick {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d87b0f4-ae26-4b18-835c-af3a7ce1349f/dd95omk-2861467e-8715-48b3-b9df-f98f1d17cb35.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkODdiMGY0LWFlMjYtNGIxOC04MzVjLWFmM2E3Y2UxMzQ5ZlwvZGQ5NW9tay0yODYxNDY3ZS04NzE1LTQ4YjMtYjlkZi1mOThmMWQxN2NiMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Q4HX9FGhOVVeXZ6wtH7bpu1cLh6mLAsBirPKtKP1g_A");
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+.kick:hover {
+  background-image: url("https://uploads.spiritfanfiction.com/historias/capas/202301/nao-tem-ninguem-aqui-24550817-070120231528.png");
+  background-size: cover;
+}
+.ben {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/171/955/597/tv-show-ben-10-ben-tennyson-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+.ben:hover {
+  background-image: url("https://uploads.spiritfanfiction.com/historias/capas/202301/nao-tem-ninguem-aqui-24550817-070120231528.png");
+  background-size: cover;
+}
+.hora {
+  background-image: url("https://occ-0-8407-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd40Kgr4RE99Uy7X8mzX8EEjgWKERJk6a3KoAilGDcV3K5n90mF265LTi4-SS5dRoRtlHEgUmQWQxFAx_bCzLb4Z-rHd0Xr8hSY2.jpg?r=c1a");
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+}
+.hora:hover {
+  background-image: url("https://uploads.spiritfanfiction.com/historias/capas/202301/nao-tem-ninguem-aqui-24550817-070120231528.png");
+  background-size: cover;
+}
+.padrinhos {
+  background-image: url("https://m.media-amazon.com/images/S/pv-target-images/7a081aa8ca312d5ae9ba64192fd082e031ababdb8ce2f7cee5dafc1dad3ebb2e._SX1080_FMjpg_.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+}
+.padrinhos:hover {
+  background-image: url("https://uploads.spiritfanfiction.com/historias/capas/202301/nao-tem-ninguem-aqui-24550817-070120231528.png");
+  background-size: cover;
+}

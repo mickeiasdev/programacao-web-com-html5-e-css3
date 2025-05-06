@@ -1,0 +1,40 @@
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 30%;
+  height: 30%;
+  margin: 30px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, rgb(165, 221, 170), rgb(54, 113, 58));
+  box-shadow: 5px 5px 5px black;
+  font-family: Geneva, sans-serif
+  font-size: 12px;
+  text-align: justify;
+  color: black;
+  & h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: darkgreen;
+  }
+  & p {
+    text-indent: 30px;
+    margin: 20px;
+  }
+  & a {
+    font-weight: bold;
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    color: red;
+    transition: 0.2s ease-in-out;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+}

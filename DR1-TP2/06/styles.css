@@ -1,0 +1,39 @@
+/*
+  Desenvolva uma página HTML com CSS externo e inclua três elementos <header> repetidos,
+  centralizados e ocupando toda a largura da tela, com a altura definida de acordo com
+  sua preferência. Aplique id's e classes para garantir que cada <header> tenha uma cor
+  de fundo distinta. Lembre-se de utilizar a propriedade !important para assegurar que
+  os estilos sejam aplicados corretamente.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #101010;
+}
+
+.header {
+  height: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border: solid 5px rgba(0, 0, 0, 0.5);
+  font-family: Verdana, sans-serif;
+  border-radius: 12px;
+  background-color: yellow;
+}
+
+#header1 {
+  background-color: rgb(121, 121, 255); !important
+}
+
+#header2 {
+  background-color: rgb(255, 121, 121); !important
+}
+
+#header3 {
+  background-color: rgb(102, 210, 102); !important
+}

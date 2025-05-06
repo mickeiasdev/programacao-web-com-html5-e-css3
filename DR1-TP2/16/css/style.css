@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+.bodyIndex {
+  background-color: black;
+  & .ulIndex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.menuIndex {
+  width: 250px;
+  margin: 20px 0;
+  list-style: none;
+  & .btIndex {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(8, 8, 8) 0%, #242424 80%);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  & .btIndex:hover {
+    background: linear-gradient(45deg, rgb(90, 90, 90) 0%, #b8b8b8 80%);
+    transform: scale(1.05);
+  }
+  & a,
+  a:visited {
+    text-decoration: none;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.bodyMickeias {
+  background: linear-gradient(45deg, #0a516d 0%, #638673 90%);
+  height: 100vh;
+}
+.bodyEduardo {
+  background: linear-gradient(45deg, #e46d29 0%, #fcac03 90%);
+  height: 100vh;
+}
+.bodyLucas {
+  background: linear-gradient(45deg, #632b76 0%, #cf4647 90%);
+  height: 100vh;
+}
+
+.bodyDark {
+  background: linear-gradient(45deg, rgb(8, 8, 8) 0%, #242424 80%);
+}
+
+.ulMickeias,
+.ulEduardo,
+.ulLucas {
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #2b2726 0 1px 5px 1px;
+  font-weight: 500;
+  list-style: none;
+  & a,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.mainMickeias,
+.mainLucas,
+.mainEduardo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 95vh;
+  & section {
+    width: 700px;
+  }
+  & img {
+    width: 500px;
+    border-radius: 100%;
+    box-shadow: #2b2726 10px 1px 20px 1px;
+  }
+  & h1 {
+    font-size: 75px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+  }
+  & p {
+    color: #fff;
+    font-size: 20px;
+  }
+}

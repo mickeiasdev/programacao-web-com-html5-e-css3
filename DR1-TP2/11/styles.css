@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.centralizante {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+/*-------------------------------header------------------------------------*/
+.cabecalho {
+  background-color: #1a1d1f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  & h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 50px;
+    border-radius: 5px;
+    background-color: #f96800;
+    transition: 0.25s ease-out;
+  }
+  & a:hover {
+    transform: scale(1.05);
+  }
+  & a:visited {
+    color: #fff;
+  }
+}
+
+.listaMenus {
+  list-style-type: none;
+  background-color: rgb(83, 83, 83);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  & a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  & li {
+    transition: 0.25s ease-out;
+  }
+  & li:hover {
+    transform: scale(1.05);
+  }
+}
+/*-------------------------------main------------------------------------*/
+article {
+  display: flex;
+  margin-top: 10px;
+  height: 750px;
+  background-color: #1a1d1f;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.esquerda,
+.direita {
+  text-align: center;
+  padding: 25px;
+  & figcaption {
+    text-align: left;
+  }
+  & .titleEsquerda {
+    text-align: left;
+  }
+  & figure {
+    margin: 0;
+  }
+  & p {
+    text-align: justify;
+  }
+  & a {
+    color: #f96800;
+    text-decoration: none;
+    & 
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+  & a:visited {
+    color: #f96800;
+  }
+}
+/*-------------------------------footer------------------------------------*/
+footer {
+  padding: 25px;
+  text-align: center;
+  & a, p {
+    color: #f96800;
+    text-decoration: none;
+  }
+  & span {
+    margin: 0 20px;
+  }
+}

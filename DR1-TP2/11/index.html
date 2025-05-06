@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 
+      Crie uma página completa em HTML, usando CSS externo
+      um tema real a sua escolha e com as seguintes características:
+
+Página com cor de fundo cinza claro;
+Largura da centralizante 1200px e altura que for necessária para o conteúdo;
+Div centralizante com sombra e margem interna de 10px e fundo branco;
+Header com margem interna de 10px e cor de fundo;
+Logo à direita (canto superior direito em relação a tela) dentro do header
+e um título principal centralizado; 
+Menu com seis itens diferentes com links cegos e com mudança de cor de texto ao passar do mouse;
+Três seções diferentes, com uma linha e duas colunas cada;
+Na primeira coluna uma foto com uma legenda e um link fictício que abra em uma outra guia do navegador.
+Na segunda coluna um texto relativo à foto usada na outra coluna, com título, parágrafo,
+e em uma parte qualquer do texto pelo menos um link cego.
+Uma linha simples separando as seções com espaçamento de 5px.
+Rodapé com Copyright simples, centralizado e linkado para email.
+Use: 
+
+a a:visited a:hover;
+background;
+border;
+body;
+header;
+main;
+h1, h2;
+section;
+article;
+p;
+footer;
+padding;
+hr.
+Obs: Você pode desconsiderar quaisquer dessas configurações especificadas, se preferir apresentar uma página com as mesmas características visuais, respeitando o código que é pedido.
+     -->
+
+    <main class="centralizante">
+      <header>
+        <section class="cabecalho">
+          <img
+            src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/common/bo6-short-logo.png"
+            alt="Logo Lego"
+          />
+          <h1>Call of Duty®: Black Ops 6</h1>
+          <a href="">Login</a>
+        </section>
+        <nav>
+          <ul class="listaMenus">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guias</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <section class="esquerda">
+          <h2 class="titleEsquerda">Modo campanha</h2>
+          <figure>
+            <img
+              width="500px"
+              src="https://image.api.playstation.com/vulcan/ap/rnd/202405/2923/dab61c199e7b5e513f6b23f528985ee4f7e9425ea749d92e.png"
+              alt="wallpaper do tema call of duty, cabeça cachorro cerberus"
+            />
+            <figcaption><cite>The Truth Lies - Call of Duty: Black Ops 6</cite></figcaption>
+          </figure>
+        </section>
+        <hr />
+        <section class="direita">
+          <h2 class="titleDireita">Historia</h2>
+          <p>
+            A campanha de Call of Duty: Black Ops 6 se passa no período de
+            transição pós-Guerra Fria, quando a União Soviética colapsa e os
+            Estados Unidos se consolidam como superpotência. No enredo, Frank
+            Woods e seu protegido Troy Marshall enfrentam um contexto político
+            instável, com o Golfo Pérsico em evidência, e acabam por se tornar
+            fugitivos após uma operação fracassada. Ambos vão a campo sem o
+            apoio da CIA, formando uma equipe de agentes dissidentes para
+            enfrentar uma conspiração que se infiltrou nos níveis mais altos da
+            agência. Os jogadores assumem o papel de "Case" (apelido de William
+            Calderon), um agente que ajuda Woods e Marshall a enfrentar antigos
+            aliados que se tornaram inimigos, como Russell Adler. A campanha
+            inclui missões em lugares como o subterrâneo de um cassino na Europa
+            e um palácio no deserto iraquiano, além de uma missão nos EUA para
+            resgatar Adler de uma instalação secreta da CIA. O jogador tem
+            liberdade para abordar essas missões com táticas variadas, incluindo
+            abordagens furtivas ou de combate direto, o que adiciona diversidade
+            e rejogabilidade. A Safehouse no jogo oferece aos jogadores um
+            espaço entre as missões para explorar informações, praticar tiro, e
+            acessar o Evidence Board, onde é possível analisar pistas e planejar
+            próximas ações, aumentando a imersão na narrativa de espionagem e
+            traições. A história se destaca pelo clima de desconfiança e
+            estratégias táticas complexas, características da série Black Ops</br><br>
+            <a href="#">Acesse o site.</a>
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p><a href="https://www.charlieintel.com" target="_blank">Black Ops 6: Campanha e Missões</a> | Mickeias Coelho.</p>
+    </footer>
+  </body>
+</html>
