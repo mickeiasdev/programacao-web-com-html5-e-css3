@@ -34,7 +34,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 3 – Sams Teach Yourself HTML, CSS, and JavaScript All in One](https://learning.oreilly.com/library/view/sams-teach-yourself/9780135167069/ch03.xhtml#ch03)
 - [Capítulo 1 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_01_Updated_Final_SZ_ePub.xhtml)
 
----
+----
 
 ### 🔤 Tipografia em HTML
 
