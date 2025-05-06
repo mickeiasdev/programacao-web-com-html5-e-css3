@@ -10,7 +10,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - Criar páginas web em HTML5 e CSS3 com os principais recursos;
 - Criar páginas web em HTML5 e CSS3 com estrutura e layout.
 
---------
+----
 
 ## 📚 Trilha de Aprendizagem
 
@@ -20,14 +20,14 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 2 – Sams Teach Yourself HTML, CSS, and JavaScript All in One, Julie C. Meloni](https://learning.oreilly.com/library/view/sams-teach-yourself/9780135167069/ch02.xhtml#ch02)
 - [Capítulo 1 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_01_Updated_Final_SZ_ePub.xhtml)
 
----
+----
 
 ### 🧱 Primeiras páginas HTML
 
 - [Capítulo 2 – Sams Teach Yourself HTML, CSS, and JavaScript All in One](https://learning.oreilly.com/library/view/sams-teach-yourself/9780135167069/ch02.xhtml#ch02)
 - [Capítulo 3 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_03_Updated_Final_SZ_ePub.xhtml)
 
----
+----
 
 ### 🎨 Folhas de estilo básicas
 
@@ -42,7 +42,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 7 – Sams Teach Yourself HTML, CSS, and JavaScript All in One](https://learning.oreilly.com/library/view/sams-teach-yourself/9780135167069/ch07.xhtml#ch07)
 - [Capítulo 3 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_03_Updated_Final_SZ_ePub.xhtml)
 
----
+----
 
 ### 🖼️ Multimídia
 
@@ -50,7 +50,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 5 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_05_Updated_Final_VK_ePub.xhtml)
 - [Capítulo 7 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_07_Updated_Final_RK_ePub.xhtml)
 
----
+----
 
 ### 📊 Tabelas
 
@@ -61,7 +61,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Documentação MDN – CSS Selectors](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Selectors)
 - [Documentação MDN – CSS Values and Units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
 
----
+----
 
 ### 📦 Box-model
 
@@ -69,7 +69,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 2 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_02_Updated_Final_SZ_ePub.xhtml)
 - [Documentação MDN – CSS Layout: Normal Flow](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Normal_Flow)
 
----
+----
 
 ### 📐 Flex-box
 
@@ -77,7 +77,7 @@ Disciplina introdutória à construção de páginas web. Neste curso, aprendemo
 - [Capítulo 2 – The HTML and CSS Workshop, Lewis Coulson](https://learning.oreilly.com/library/view/the-html-and/9781838824532/B14506_02_Updated_Final_SZ_ePub.xhtml)
 - [Documentação MDN – CSS Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)
 
----
+----
 
 ### 🧱 Grid-box e outros displays
 
