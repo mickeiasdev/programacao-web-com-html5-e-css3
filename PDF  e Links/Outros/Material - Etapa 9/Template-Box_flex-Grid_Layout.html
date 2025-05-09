@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+
+    <title>Layout Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 100vh;*/
+            background-color: #f0f0f0;
+            font-size: 20px;
+        }
+
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(24, 1fr);
+            gap: 5px;
+            width: 80%;
+            max-width: 1000px;
+            height: 800px;
+            background-color: #eee;
+        }
+
+        .grid-item {
+            background-color: #999;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        header {
+            grid-column: span 12;
+            grid-row: span 6;
+                justify-content: space-between !important;
+
+        }
+
+        nav{
+            grid-column: span 12;
+            grid-row: span 1;
+           /* justify-content: space-around !important;*/
+           background-color: #666;
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+        }
+
+        figure {
+            grid-column: span 12;
+             grid-row: span 8;
+        }
+
+        .box {
+            grid-column: span 4;
+            grid-row: span 6;
+        }
+
+        footer {
+            grid-column: span 12;
+            grid-row: span 8;
+             justify-content: space-between !important;
+        }
+
+        .top {
+            background-color: #666;
+            width: auto;
+            height: auto;
+            display: block;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        .foot {
+            background-color: #666;
+            width: auto;
+            height: auto;
+            display: block;
+            justify-content: center;
+            padding: 10px;
+            margin: 0 auto;
+
+        }
+
+       /* nav ul li {
+            display: inline;
+        }*/
+
+         ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            padding-top: 5px;   
+        }
+
+        ul li a {
+            text-decoration: none;
+
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+
+
+        /* Abaixo WhatsApp */
+        .btn-whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 9999999;
+        }
+
+        .fa-whatsapp {
+            margin-top: 16px;
+        }
+
+
+       
+
+    </style>
+</head>
+<body>
+sgsdfgsdfgfdsgdfs
+
+    <a class="btn-whatsapp" href="https://wa.me/5521981075286" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+
+    <div class="grid-container">
+        <header class="grid-item">
+<div class="top">fdsfsf</div>
+<div class="top"><h1>Título H1</h1></div><div class="top"><i class="fa fa-whatsapp"></i></div>
+
+
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artigos</a></li>                 
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Contato</a></li>
+
+
+            </ul>
+
+
+        </nav>
+        <figure class="grid-item">3</figure>
+        <div class="grid-item box">4</div>
+        <div class="grid-item box">4</div>
+        <div class="grid-item box">4</div>
+        <footer class="grid-item"><div class="foot">fsfsfdsf</div>
+</footer>
+    </div>
+</body>
+</html>

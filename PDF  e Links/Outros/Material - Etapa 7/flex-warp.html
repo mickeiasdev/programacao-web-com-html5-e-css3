@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo: display: flex e flex-wrap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0 20px;
+            font-size: 1rem;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto 40px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            display: flex; /* Define um container flexível */
+            justify-content: center; /* Centraliza o conteúdo no eixo principal */
+            align-items: center; /* Centraliza o conteúdo no eixo cruzado */
+            flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
+            gap: 10px; /* Espaçamento entre os itens */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .example {
+            border: 2px dashed #007bff;
+            padding: 5px;
+            text-align: left;
+            background: #f9f9f9;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo: display: flex e flex-wrap</h1>
+    <p>Abaixo estão exemplos que demonstram o uso de `display: flex` e como o `flex-wrap` influencia a organização dos itens em um container flexível.</p>
+
+    <h2>Exemplo 1: flex-wrap: nowrap</h2>
+    <p>Os itens permanecem em uma única linha e excedem o limite do container.</p>
+    <div class="container" style="flex-wrap: nowrap; overflow: auto;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <div class="example">
+        <code>flex-wrap: nowrap;</code>
+    </div>
+
+    <h2>Exemplo 2: flex-wrap: wrap</h2>
+    <p>Os itens quebram para a próxima linha se não couberem no container.</p>
+    <div class="container" style="flex-wrap: wrap;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <div class="example">
+        <code>flex-wrap: wrap;</code>
+    </div>
+
+    <h2>Exemplo 3: flex-wrap: wrap-reverse</h2>
+    <p>Os itens quebram para a próxima linha, mas as linhas são organizadas no sentido inverso.</p>
+    <div class="container" style="flex-wrap: wrap-reverse;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <div class="example">
+        <code>flex-wrap: wrap-reverse;</code>
+    </div>
+</body>
+</html>

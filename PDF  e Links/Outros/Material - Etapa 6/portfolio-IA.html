@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome que funciona zap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Portfólio com Projetos sobre Imagem Fixa</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            font-family: "Nanum Gothic", sans-serif;
+            height: 100%;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-size: 15px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header-project {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            z-index: 2;
+        }
+
+        .portfolio {
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8); /* Fundo para destacar os projetos */
+            color: #fff;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateX(50%);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .project:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .project.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project img {
+            width: 60%;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .project img:hover {
+            filter: brightness(0.5);
+        }
+
+        .project img:hover::after {
+            content: "Clique para saber mais!";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .project .info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .project .info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project .info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .project .info ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        .scroll-button {
+            position: fixed;
+            right: 20px;
+            padding: 10px 20px;
+            background: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+
+        .scroll-button:hover {
+            background: #777;
+        }
+
+        .scroll-button.up {
+            top: 20px;
+        }
+
+        .scroll-button.down {
+            bottom: 20px;
+        }
+
+        footer {
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            bottom: 0;
+            font-size: 0.8em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column !important;
+            }
+
+            .project img {
+                width: 100%;
+            }
+
+            .project .info {
+                text-align: center;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 5%;
+            left: 5%;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav li {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width: 769px) {
+            nav li:not(:last-child)::after {
+                content: '·';
+                margin-left: 10px;
+            }
+        }
+
+        nav a {
+            content: "←"; /* Adiciona a seta */
+            text-decoration: none;
+            font-size: 1em;
+            color: #000;
+            padding: 10px 15px;
+            transition: color 0.3s, transform 0.2s;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Menu Hamburger */
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                display: none;
+                gap: 10px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+                font-size: 1.8em;
+                background: #fff;
+                border: none;
+                cursor: pointer;
+                color: #000;
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                z-index: 11;
+                padding: 0px 10px;
+                padding: 10px;
+            }
+
+            .titulo-portifolio {
+                background: rgba(255, 255, 255, 0.7);
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+            .fa {
+                display: inline-block;
+                font: normal normal normal 14px / 1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        /* Estilo do botão de rolar para cima */
+        .scroll-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            color: white;
+            font-size: 30px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        .scroll-to-top i {
+            transform: translateY(3px);
+        }
+    </style>
+</head>
+<body id="dynamic-header">
+
+    <!-- Botão Menu Hamburger -->
+    <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+    <header class="header-project">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Site grátis</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">QrCode</a></li>
+                <li><a href="#">Login <i class="fa fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <div style="background: rgba(255, 255, 255, 0.7); padding: 10px 20px; border-radius: 5px; color: black;">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>Descubra projetos incríveis que desenvolvi.</p>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <h2>Projetos</h2>
+        <!-- Projetos -->
+        <div class="project">
+            <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
+            <div class="info">
+                <h3>Projeto 1</h3>
+                <p>Descrição do Projeto 1.</p>
+                <ul>
+                    <li>Detalhe 1</li>
+                    <li>Detalhe 2</li>
+                    <li>Detalhe 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
+            <div class="info">
+                <h3>Projeto 2</h3>
+                <p>Descrição do Projeto 2.</p>
+                <ul>
+                    <li>Detalhe 1</li>
+                    <li>Detalhe 2</li>
+                    <li>Detalhe 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
+            <div class="info">
+                <h3>Projeto 3</h3>
+                <p>Descrição do Projeto 3.</p>
+                <ul>
+                    <li>Detalhe 1</li>
+                    <li>Detalhe 2</li>
+                    <li>Detalhe 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- <button class="scroll-button up" onclick="scrollToTop()">Subir</button>
+    <button class="scroll-button down" onclick="scrollToBottom()">Descer</button>-->
+
+    <!-- Novo botão para rolar até o topo -->
+    <button class="scroll-to-top" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></button>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Toggle do menu hamburger
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        // Lista de imagens de fundo
+        const backgrounds = [
+            'home.jpg',
+            'home2.jpg',
+            'home3.jpg',
+            'home4.jpg',
+            'home5.jpg',
+        ];
+
+        // Seleciona uma imagem aleatória
+        const selectedBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+        // Aplica a imagem de fundo ao header
+        document.getElementById('dynamic-header').style.backgroundImage = `url(${selectedBackground})`;
+
+        // Rolagem suave
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+        // Animação dos projetos ao rolar
+        const projects = document.querySelectorAll('.project');
+        window.addEventListener('scroll', () => {
+            projects.forEach(project => {
+                const projectTop = project.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (projectTop < windowHeight - 50) {
+                    project.classList.add('show');
+                }
+            });
+
+            // Exibe o botão de rolar para cima quando o usuário rola a página
+            const scrollToTopButton = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 100) {
+                scrollToTopButton.style.display = 'flex';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

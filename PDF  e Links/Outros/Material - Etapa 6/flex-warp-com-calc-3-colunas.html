@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>2
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo: Definindo Quantidade de Itens por Linha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0 20px;
+            font-size: 1rem;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto 40px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap; /* Permite que itens quebrem para nova linha */
+            gap: 10px; /* Espaçamento entre os itens */
+            justify-content: space-between; /* Distribui os itens igualmente */
+        }
+
+        .box {
+            width: calc((600px - 20px) / 3); /* Define a largura para caber 3 itens por linha */
+            height: 100px;
+            background-color: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .example {
+            border: 2px dashed #007bff;
+            padding: 5px;
+            text-align: left;
+            background: #f9f9f9;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo: Definindo Quantidade de Itens por Linha</h1>
+    <p>Este exemplo demonstra como posicionar exatamente 3 itens por linha dentro de um container flexível de 600px.</p>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <div class="example">
+        <code>
+            .container {'{'}<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;flex-wrap: wrap;<br>
+            &nbsp;&nbsp;gap: 10px;<br>
+            &nbsp;&nbsp;justify-content: space-between;<br>
+            {'}'}<br><br>
+            .box {'{'}<br>
+            &nbsp;&nbsp;width: calc((600px - 20px) / 3); /* Ajusta para 3 caixas por linha */<br>
+            &nbsp;&nbsp;height: 100px;<br>
+            {'}'}
+        </code>
+    </div>
+</body>
+</html>

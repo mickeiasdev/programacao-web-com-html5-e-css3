@@ -1,0 +1,16 @@
+<!-- Explicação background-size :
+background-size: cover - A imagem cobre todo o elemento, ajustando a escala para cobrir a área disponível.
+background-size: contain - A imagem é ajustada para caber dentro do elemento sem cortar.
+background-size: auto - A imagem mantém seu tamanho original.
+background-size: 150px 100px - A imagem é redimensionada para uma largura de 150px e altura de 100px.
+background-repeat: repeat - A imagem é repetida em toda a área do elemento.
+background-repeat: no-repeat - A imagem aparece uma vez sem repetição.  
+
+
+Explicação background-position :
+top left - Alinha a imagem ao canto superior esquerdo do elemento.
+top right - Alinha a imagem ao canto superior direito do elemento.
+center - Centraliza a imagem no meio do elemento.
+bottom left - Alinha a imagem ao canto inferior esquerdo do elemento.
+bottom right - Alinha a imagem ao canto inferior direito do elemento.
+75% 25% - Coloca a imagem 75% à direita e 25% para baixo em relação ao topo e à esquerda do elemento, permitindo ajustes mais específicos.

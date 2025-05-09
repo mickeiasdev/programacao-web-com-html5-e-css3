@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Cor de Fundo por Dispositivo</title>
+    <style>
+        /* Estilo para dispositivos desktop (tela acima de 1024px) */
+        body {
+            font-family: Arial, sans-serif;
+           
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: red; /* Cor de fundo para desktop */
+             font-size: 1em;
+        }
+
+
+
+
+        /* Estilo para dispositivos tablets (tela entre 768px e 1024px) */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            body {
+               color: green;  /* Cor de fundo para tablet */
+
+               font-size: 2em;
+            }
+        }
+
+        /* Estilo para dispositivos móveis (tela abaixo de 768px) */
+        @media (max-width: 767px) {
+            body {
+                color: blue; /* Cor de fundo para celular */
+                font-size: 3em;
+            }
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Mudança de Cor por Dispositivo</p>
+    
+
+
+</body>
+</html>
